@@ -15,6 +15,12 @@ export default function TextUtils() {
     setText('');
   }
 
+  function removeExtraSpace (){
+    let newTxt= text.split(/[ ]+/);
+    newTxt = newTxt.join(' ');
+    setText(newTxt);
+  }
+
   return (
     <div className="TextUtils">
       <div className="px-5">
@@ -45,6 +51,9 @@ export default function TextUtils() {
           </button>
           <button onClick={clearText} type="button" class="btn btn-outline-warning ms-2 bg-dark">
             Clear
+          </button>
+          <button onClick={removeExtraSpace} type="button" class="btn btn-outline-warning ms-2 bg-dark">
+            extra Space
           </button>
         </div>
       </div>

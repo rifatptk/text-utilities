@@ -11,6 +11,9 @@ export default function TextUtils() {
   function lowerCase() {
     setText(text.toLowerCase());
   }
+  function clearText (){
+    setText('');
+  }
 
   return (
     <div className="TextUtils">
@@ -40,8 +43,8 @@ export default function TextUtils() {
           >
             Lower Case
           </button>
-          <button type="button" class="btn btn-outline-warning ms-2 bg-dark">
-            Right
+          <button onClick={clearText} type="button" class="btn btn-outline-warning ms-2 bg-dark">
+            Clear
           </button>
         </div>
       </div>

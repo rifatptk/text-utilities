@@ -71,7 +71,7 @@ export default function TextUtils(props) {
           </button>
         </div>
       </div>
-      <div className={`ms-5 text-${props.theme}`}>
+      <div className={`m-5 text-${props.theme}`}>
         <h6>Char count : {text.length}</h6>
         <h6>Word count : {text.split(' ').length}</h6>
       </div>
